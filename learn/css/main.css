@@ -1,0 +1,125 @@
+.main{
+  line-height: 2.5;
+}
+.main .nav{
+  height: 60px;
+  background-color:#47464a ;
+  color: #999;
+  line-height: 60px;
+  text-align: center;
+}
+
+.main .nav a{
+  margin: 0 38px;
+  color: #999;
+  text-decoration: none;
+}
+
+.main .nav a:hover{
+  color: #fff;
+}
+
+.main .nav a.selected{
+  color:#ef4238 ;
+}
+
+.main .container{
+  width: 1120px;
+  margin: 0 auto;
+}
+/* 高度坍塌处理 */
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 选择区 */
+.container .chose-area {
+  margin: 40px 0;
+  line-height: 30px;
+  border: 1px solid #e5e5e5;
+}
+
+.container .chose-area .chose-item{
+  margin: 1em 0;
+  font-size: 14px;
+  border-bottom: 1px dotted #e5e5e5;
+}
+
+.container .chose-area .chose-item .right a{
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.container .chose-area .chose-item .left{
+  color: #999;
+  float: left;
+  width: 60px;
+  text-align: right;
+}
+
+.container .chose-area .chose-item .right{
+  color: #333;
+  float: left;
+  width: 1050px;
+
+}
+
+.container .chose-area .chose-item .right li{
+  float: left;
+  margin: 0 9px;
+  padding: 0 6px;
+}
+
+.container .chose-area .chose-item .right li a:hover{
+  color: #ef4238;
+}
+
+.container .chose-area .chose-item .right li.selected{
+  background-color: #ef4238;
+  color: #fff;
+  border-radius: 10px;
+}
+
+/* 电影 */
+.main .container .movies .movie-item{
+  width: 160px;
+  margin: 10px 32px 10px 0;
+  float: left;
+}
+
+.main .container .movies .movie-item .poster{
+  width: 160px;
+  height: 220px;
+}
+/* 文字不换行且用...表示 */
+.main .container .movies .movie-item .name{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 2px;
+  text-align: center;
+}
+
+.main .container .movies .movie-item .name a{
+  color: #333;
+  text-decoration: none;
+}
+
+.main .container .movies .movie-item .score{
+  text-align: center;
+  line-height: 1.5;
+  color: #ffb400;
+  font-style: italic;
+}
+
+.main .container .movies .movie-item .score::first-letter{
+  font-size: 1.5em;
+}
+
+
+.main .container .movies .movie-item:nth-child(6n){
+  margin-right: 0px;
+}
