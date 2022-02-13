@@ -1,0 +1,47 @@
+.banner{
+  width: 520px;
+  height: 400px;
+  border: 2px solid;
+  margin: 1em auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner .imgs{
+  width: 1560px;
+  height: 400px;
+}
+
+.banner .imgs img{
+  width: 520px;
+  height: 400px;
+}
+
+.banner .imgs a{
+  float: left;
+}
+
+
+.banner .modal{
+  width: 520px;
+  height: 30px;
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.banner .modal .title{
+  color: #fff;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.banner .modal .dots{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  float: right;
+}
