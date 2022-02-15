@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3184871 */
-  src: url('iconfont.woff2?t=1644914476837') format('woff2'),
-       url('iconfont.woff?t=1644914476837') format('woff'),
-       url('iconfont.ttf?t=1644914476837') format('truetype');
+  src: url('iconfont.woff2?t=1644931195004') format('woff2'),
+       url('iconfont.woff?t=1644931195004') format('woff'),
+       url('iconfont.ttf?t=1644931195004') format('truetype');
 }
 
 .iconfont {
@@ -13,7 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-fangdajing::before {
+.icon-201yonghu_yonghu2:before {
+  content: "\e63d";
+}
+
+.icon-fangdajing:before {
   content: "\e633";
 }
 
