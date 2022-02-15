@@ -4,59 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="shortcut icon" href="https://oss.tool.lu/cache/202202/15/1627144txvyymxzmznlnnf.png.icon.ico">
+  <title>Smoothly</title>
   <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/iconfont/iconfont.css">
 </head>
 <body>
-  <div id="app">
-    <!-- 界面模板 -->
-    <h1>系统名称：{{title}}</h1>
-    <ul>
-      <li v-for="(item,i) in products">名称：{{item.name}}
-
-
-        <button @click="chageStock(item,item.stock - 1)">-</button>
-        <span v-if="item.stock>0">{{item.stock}}</span>
-        <span v-else>无货</span>
-        <button @click="chageStock(item,item.stock + 1)">+</button>
-        <button @click="remove()">删除</button>
-
-
-      </li>
-    </ul>
+  <!-- tilte -->
+  <div class="title-bar fixclear">
+    <!-- logo -->
+    <div class="logo">
+      <h1><img src="../../imgs/logo.png" alt="logo"></h1>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav-var">
+      <ul>
+        <li>首页</li>
+        <li>服务范围</li>
+        <li>需求提交</li>
+        <li>客服留言</li>
+        <input type="text" name="query" id="input-query">
+        <button type="submit"> <i class="iconfont icon-fangdajing"></i></button>
+        <i class="iconfont icon-24gl-portraitMaleInfo"></i>
+      </ul>
+    </div>
   </div>
 
-
-
-  <script src="../../vue/vue.js"></script>
-  <script>
-    //vm vue实例
-    var vm = new Vue({
-      //配置
-      el:"#app",// css选择器
-      data:{
-        //和界面相关的数据
-        title:"库存管理系统",
-        products:[
-          {name:"iphone",stock: 10},
-          {name:"xiaomi",stock: 5},
-          {name:"huawei",stock: 10},
-        ],
-      },
-      methods:{
-        // 删除
-        remove(i){
-          this.products.splice(i,1);
-        },
-        // 改变库存
-        chageStock(products,newStock){
-          if(newStock<0){
-            newStock=0;
-          }
-          products.stock=newStock;
-        },
-      }
-    });
-  </script>
 </body>
 </html>
