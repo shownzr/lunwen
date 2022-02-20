@@ -1,0 +1,90 @@
+.main .banner{
+  width: 100%;
+  height: 400px;
+  margin: 100px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.main .banner .imgs{
+  width: 1000%;
+  height: 400px;
+}
+
+.main .banner .imgs a{
+  float: left;
+}
+
+.main .banner .imgs img{
+  width: 100%;
+  height: 400px;
+}
+
+.main .banner .modal{
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.main .banner .modal .dots{
+  position:absolute;
+  right: 50%;
+  margin-top: 15px;
+}
+
+.main .banner .modal .dots .on{
+  background-color: #fff;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.main .banner .modal .dots li{
+  float: left;
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+  border-radius: 50%;
+  border-color: #fff;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+
+
+.main .banner .imgs .prev a{
+  width: 50px;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.main .banner .imgs .prev a{
+  width: 50px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.main .banner .prev i::before{
+  font-size: 50px;
+  font-weight: bold;
+  color: rgba(255, 255, 255,.5);;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.main .banner .next i::before{
+  font-size: 50px;
+  color: rgba(255, 255, 255, .5);
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+

@@ -41,7 +41,7 @@
 
 .banner .modal .dots{
   position: absolute;
-  right: 0;
+  right: 50%;
   bottom: 0;
-  float: right;
+  margin: 1em auto;
 }

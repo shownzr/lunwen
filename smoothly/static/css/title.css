@@ -12,35 +12,36 @@
     .header .container {
         width: 100%;
         height: 60px;
-        position: fixed;
+        float: left;
         background-color: rgb(44, 40, 48);
     }
     
     .header .container .logo {
-        width: 200px;
+        width: 10%;
         height: 60px;
     }
     
     .header .logo a {
-        width: 180px;
-        height: 40px;
+        width: 15%;
+        height:  30px;
         display: block;
         position: absolute;
         background: url("../../imgs/logo.png") no-repeat;
         background-size: contain;
         margin: 10px 10px 10px 30px;
-        padding-top: 40px;
+        padding-top: 50px;
         overflow: hidden;
         box-sizing: border-box;
     }
     /* mid */
     
     .container .mid {
-        width: 1000px;
+        width: 100%;
         height: 60px;
-        position: absolute;
-        top: 0;
-        left: 250px;
+        background-color: rgba(44, 40, 48, .6);
+        margin: 1em auto;
+        display: block;
+        
     }
     
     .container .mid .nav li {
@@ -53,7 +54,7 @@
     
     .container .mid .nav li a {
         font-size: 20px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
         color: #fff;
     }
     
@@ -65,15 +66,15 @@
     /* query */
     
     .container .query {
-        width: 550px;
-        height: 60px;
+        width: 30%;
+        height: 40px;
         position: absolute;
         top: 15px;
         right: 200px;
     }
     
     .container .query #d1 {
-        width: 550px;
+        width: 100%;
         height: 30px;
     }
     
