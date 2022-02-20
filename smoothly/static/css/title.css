@@ -24,7 +24,6 @@
     .header .logo a {
         width: 180px;
         height: 40px;
-        background-color: red;
         display: block;
         position: absolute;
         background: url("../../imgs/logo.png") no-repeat;
@@ -58,8 +57,9 @@
         color: #fff;
     }
     
-    .container .mid .nav li a:hover {
-        color: rgb(185, 68, 68);
+    .container .mid .nav li a:hover,
+    .container .user .submenu a:hover {
+        color: #ef4238;
     }
     /* right */
     /* query */
