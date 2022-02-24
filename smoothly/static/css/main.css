@@ -1,0 +1,403 @@
+/* 内容部分 */
+
+@font-face {
+    font-family: "方方先锋体";
+    src: url(../../font/方方先锋体.ttf);
+}
+
+@font-face {
+    font-family: "恶腿黑体";
+    src: url(../../font/恶腿黑体.ttf);
+}
+
+@font-face {
+    font-family: "文楷";
+    src: url(../../font/文楷.ttf);
+}
+
+.aboutus {
+    width: 100%;
+    height: 1950px;
+    border-radius: 6px;
+}
+
+
+/* About us */
+
+.aboutus .about-us {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    border: 15px solid;
+    border-color: rgb(40, 44, 48);
+    border-radius: 8px;
+    position: relative;
+}
+
+.aboutus .about-us a {
+    width: 200px;
+    height: 50px;
+    display: block;
+    font-size: 40px;
+    color: rgb(40, 44, 48);
+    line-height: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.aboutus .smoothly-text {
+    width: 100%;
+    height: 350px;
+    margin: 0px auto;
+}
+
+.aboutus .smoothly-text img {
+    margin: 0 auto;
+    display: block;
+}
+
+.aboutus .smoothly-text p .text {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.aboutus .smoothly-text p {
+    text-align: center;
+    margin-top: 1.5%;
+}
+
+
+/* 服务范围 */
+
+.aboutus .service-area {
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+
+.aboutus .service-area .service-title {
+    width: 100%;
+    height: 100px;
+    font-family: '方方先锋体';
+    font-size: 70px;
+    text-align: center;
+    line-height: 100px;
+}
+
+
+/* 会议服务 */
+
+.aboutus .service-area .meeting-service {
+    width: 70%;
+    height: 300px;
+    left: 5%;
+    position: absolute;
+    border: 10px solid;
+    border-color: rgb(40, 44, 48);
+    border-radius: 8px;
+}
+
+.aboutus .service-area .meeting-service .service-img,
+.aboutus .service-area .school-service .service-img,
+.aboutus .service-area .wedding-service .service-img,
+.aboutus .service-area .company-service .service-img {
+    width: 40%;
+    height: 300px;
+}
+
+.aboutus .service-area .meeting-service .service-img img,
+.aboutus .service-area .school-service .service-img img,
+.aboutus .service-area .wedding-service .service-img img,
+.aboutus .service-area .company-service .service-img img {
+    width: 100%;
+    height: 300px;
+}
+
+.aboutus .service-area .meeting-service .service-text {
+    width: 60%;
+    height: 300px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-family: "恶腿黑体";
+    font-size: 40px;
+    text-align: center;
+}
+
+.aboutus .service-area .meeting-service .service-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 1.5em;
+    text-indent: 2em;
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+/* 校园活动 */
+
+.aboutus .service-area .school-service {
+    width: 70%;
+    height: 300px;
+    top: 450px;
+    right: 5%;
+    position: absolute;
+    border: 10px solid;
+    border-color: rgb(40, 44, 48);
+    border-radius: 8px;
+}
+
+.aboutus .service-area .school-service .service-img {
+    position: absolute;
+    right: 0;
+}
+
+.aboutus .service-area .school-service .service-text {
+    width: 60%;
+    height: 300px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-family: "恶腿黑体";
+    font-size: 40px;
+    text-align: center;
+}
+
+.aboutus .service-area .school-service .service-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 1.5em;
+    text-indent: 2em;
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+/* 婚礼承办 */
+
+.aboutus .service-area .wedding-service {
+    width: 70%;
+    height: 300px;
+    top: 800px;
+    left: 5%;
+    position: absolute;
+    border: 10px solid;
+    border-color: rgb(40, 44, 48);
+    border-radius: 8px;
+}
+
+.aboutus .service-area .wedding-service .service-text {
+    width: 60%;
+    height: 300px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-family: "恶腿黑体";
+    font-size: 40px;
+    text-align: center;
+}
+
+.aboutus .service-area .wedding-service .service-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 1.5em;
+    text-indent: 2em;
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+/* 公司团建 */
+
+.aboutus .service-area .company-service {
+    width: 70%;
+    height: 300px;
+    top: 1150px;
+    right: 5%;
+    position: absolute;
+    border: 10px solid;
+    border-color: rgb(40, 44, 48);
+    border-radius: 8px;
+}
+
+.aboutus .service-area .company-service .service-img {
+    position: absolute;
+    right: 0;
+}
+
+.aboutus .service-area .company-service .service-text {
+    width: 60%;
+    height: 300px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-family: "恶腿黑体";
+    font-size: 40px;
+    text-align: center;
+}
+
+.aboutus .service-area .company-service .service-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 1.5em;
+    text-indent: 2em;
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+/* 案例欣赏 */
+
+.show-examples {
+    width: 90%;
+    height: 900px;
+    margin: 0 auto;
+}
+
+.show-examples .examples-title {
+    width: 50%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.show-examples .examples-title h3 {
+    font-family: "方方先锋体";
+    font-size: 70px;
+    text-align: center;
+}
+
+.show-examples .top,
+.show-examples .bottom {
+    width: 100%;
+    height: 354px;
+    margin-top: 50px;
+}
+
+.show-examples .top div,
+.show-examples .bottom div {
+    float: left;
+}
+
+.show-examples .top .first,
+.show-examples .top .second,
+.show-examples .top .third,
+.show-examples .bottom .first,
+.show-examples .bottom .second,
+.show-examples .bottom .third {
+    width: 25%;
+    height: 350px;
+    margin-left: 5%;
+    border: 2px solid;
+    border-color: #ddd;
+    text-align: center;
+}
+
+.show-examples .top .first h4,
+.show-examples .top .second h4,
+.show-examples .top .third h4,
+.show-examples .bottom .first h4,
+.show-examples .bottom .second h4,
+.show-examples .bottom .third h4 {
+    font-size: 30px;
+    font-family: "恶腿黑体";
+    line-height: 50px;
+    color: rgb(40, 44, 48);
+}
+
+.show-examples .top .first h4:hover,
+.show-examples .top .second h4:hover,
+.show-examples .top .third h4:hover,
+.show-examples .bottom .first h4:hover,
+.show-examples .bottom .second h4:hover,
+.show-examples .bottom .third h4:hover {
+    color: #ef4238;
+}
+
+.show-examples .top .first img,
+.show-examples .top .second img,
+.show-examples .top .third img,
+.show-examples .bottom .first img,
+.show-examples .bottom .second img,
+.show-examples .bottom .third img {
+    width: 98%;
+    padding: 2px 2px;
+    height: 300px;
+}
+
+
+/* 专长特色 */
+
+.strength {
+    width: 90%;
+    height: 900px;
+    margin: 20px auto;
+}
+
+.strength .strength-title {
+    width: 50%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.strength .strength-title h3 {
+    font-family: "方方先锋体";
+    font-size: 70px;
+    text-align: center;
+    color: rgb(40, 44, 48);
+    line-height: 100px;
+}
+
+.strength .top,
+.strength .bottom {
+    width: 100%;
+    height: 354px;
+    margin-top: 10px;
+}
+
+.strength .top div,
+.strength .bottom div {
+    float: left;
+}
+
+.strength .top .first,
+.strength .top .second,
+.strength .top .third,
+.strength .bottom .first,
+.strength .bottom .second,
+.strength .bottom .third {
+    width: 25%;
+    height: 350px;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.strength .top .first img,
+.strength .top .second img,
+.strength .top .third img,
+.strength .bottom .first img,
+.strength .bottom .second img,
+.strength .bottom .third img {
+    width: 260px;
+    height: 260px;
+}
+
+.strength .top .first h4,
+.strength .top .second h4,
+.strength .top .third h4,
+.strength .bottom .first h4,
+.strength .bottom .second h4,
+.strength .bottom .third h4 {
+    font-family: "恶腿黑体";
+    font-size: 30px;
+}
+
+.strength .top .first p,
+.strength .top .second p,
+.strength .top .third p,
+.strength .bottom .first p,
+.strength .bottom .second p,
+.strength .bottom .third p {
+    font-size: 18px;
+    margin-top: 0.5em;
+    font-weight: bolder;
+}

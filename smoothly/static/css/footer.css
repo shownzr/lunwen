@@ -1,3 +1,15 @@
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer .contain-footer .activities .program a:hover,
+.footer .contain-footer .examples .methord a:hover,
+.footer .contain-footer .about-us .about a:hover {
+    color: #ef4238;
+}
+
 .footer {
     width: 100%;
     height: 300px;
@@ -6,10 +18,14 @@
 }
 
 .footer .contain-footer {
-    width: 80%;
+    width: 90%;
     height: 300px;
     margin: 1em auto;
     position: relative;
+}
+
+.footer .contain-footer {
+    margin: 0 auto;
 }
 
 .footer .contain-footer .logo-footer {
@@ -19,4 +35,175 @@
     background-size: contain;
     position: absolute;
     top: 30px;
+    left: 2%;
+}
+
+.footer .contain-footer .line1 {
+    height: 200px;
+    float: left;
+    border: 1px solid;
+    border-color: black;
+    position: absolute;
+    left: 18%;
+    top: 50px;
+}
+
+.footer .contain-footer .line2 {
+    height: 200px;
+    float: left;
+    border: 1px solid;
+    border-color: black;
+    position: absolute;
+    left: 36%;
+    top: 50px;
+}
+
+.footer .contain-footer .line3 {
+    height: 200px;
+    float: left;
+    border: 1px solid;
+    border-color: black;
+    position: absolute;
+    left: 55%;
+    top: 50px;
+}
+
+.footer .contain-footer .line4 {
+    height: 200px;
+    float: left;
+    border: 1px solid;
+    border-color: black;
+    position: absolute;
+    left: 71%;
+    top: 50px;
+}
+
+.footer .contain-footer .activities {
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    left: 17%;
+}
+
+.footer .contain-footer .activities h3 {
+    font-size: 20px;
+    color: #777777;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.footer .contain-footer .activities .program {
+    width: 100%;
+    height: 80%;
+    margin-top: 10%;
+}
+
+.footer .contain-footer .activities .program a {
+    float: left;
+    width: 100%;
+    height: 15%;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .contain-footer .examples {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 36%;
+}
+
+.footer .contain-footer .examples h3 {
+    font-size: 20px;
+    color: #777777;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.footer .contain-footer .examples .methord {
+    width: 100%;
+    height: 70%;
+    margin-top: 5%;
+}
+
+.footer .contain-footer .examples .methord a {
+    float: left;
+    width: 100%;
+    height: 15%;
+    font-size: 16px;
+    padding: 2px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .contain-footer .about-us {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 53%;
+}
+
+.footer .contain-footer .about-us h3 {
+    font-size: 20px;
+    color: #777777;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.footer .contain-footer .about-us .about {
+    width: 100%;
+    height: 70%;
+    margin-top: 5%;
+}
+
+.footer .contain-footer .about-us .about a {
+    float: left;
+    width: 100%;
+    height: 15%;
+    font-size: 16px;
+    padding: 2px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .contain-footer .tel {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 71%;
+}
+
+.footer .contain-footer .tel h3 {
+    font-size: 20px;
+    color: #777777;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.footer .contain-footer .tel .sort {
+    width: 100%;
+    height: 70%;
+    margin-top: 5%;
+}
+
+.footer .contain-footer .tel .sort div {
+    float: left;
+    width: 100%;
+    height: 15%;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .contain-footer .tel .sort .qq i::before,
+.footer .contain-footer .tel .sort .weixin i::before,
+.footer .contain-footer .tel .sort .weibo i::before,
+.footer .contain-footer .tel .sort .dianhua i::before,
+.footer .contain-footer .tel .sort .dizhi i::before {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 20px;
 }

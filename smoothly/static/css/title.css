@@ -13,7 +13,7 @@
         width: 100%;
         height: 60px;
         float: left;
-        background-color: rgb(44, 40, 48);
+        background-color: rgb(40, 44, 48);
     }
     
     .header .container .logo {
@@ -23,25 +23,28 @@
     
     .header .logo a {
         width: 15%;
-        height:  30px;
+        height: 30px;
         display: block;
         position: absolute;
         background: url("../../imgs/logo.png") no-repeat;
         background-size: contain;
-        margin: 10px 10px 10px 30px;
-        padding-top: 50px;
+        margin: 5px 10px 10px 30px;
         overflow: hidden;
         box-sizing: border-box;
+        padding-top: 50px;
     }
     /* mid */
     
     .container .mid {
         width: 100%;
         height: 60px;
-        background-color: rgba(44, 40, 48, .6);
+        background-color: rgb(40, 44, 48);
         margin: 1em auto;
         display: block;
-        
+    }
+    
+    .container .mid .nav {
+        position: relative;
     }
     
     .container .mid .nav li {
@@ -52,10 +55,46 @@
         float: left;
     }
     
+    .container .mid .nav li:hover .dropdown-menu {
+        display: block;
+    }
+    
+    .container .mid .nav .dropdown-menu {
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        border-radius: 5px;
+        background-color: rgb(40, 44, 48);
+        top: 60px;
+        z-index: 1000;
+        display: none;
+        float: left;
+    }
+    
+    .container .mid .nav .dropdown-menu li:hover {
+        background-color: #fff;
+    }
+    
+    .container .mid .nav .dropdown-menu li:hover a {
+        color: #ef4238;
+        cursor: pointer;
+    }
+    
     .container .mid .nav li a {
         font-size: 20px;
         font-weight: bold;
         color: #fff;
+    }
+    
+    .container .mid .nav .selected {
+        width: 150px;
+        height: 60px;
+        background-color: #ef4238;
+        color: #fff;
+    }
+    
+    .container .mid .nav .selected a:hover {
+        color: rgb(40, 44, 48);
     }
     
     .container .mid .nav li a:hover,
@@ -73,7 +112,7 @@
         right: 200px;
     }
     
-    .container .query #d1 {
+    .container .query input {
         width: 100%;
         height: 30px;
     }
@@ -82,7 +121,7 @@
         width: 30px;
         height: 30px;
         position: absolute;
-        top: 0;
+        top: 2px;
         right: -50px;
         cursor: pointer;
     }
