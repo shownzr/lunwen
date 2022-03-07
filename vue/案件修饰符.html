@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <h1>{{msg}}</h1>
+    <!-- 
+      按键修饰符：用来对键盘案件事件进行修饰  修饰符
+        keyup keydown .... enter回车 esc事件 delete删除键 方向键
+        enter  对回车键
+        tab    tab案件
+        delete  删除  
+        esc    esc 
+        space   空格
+
+        方向键
+        up      
+        down      
+        left
+        right
+     -->
+     <input type="text" v-model="name" @keyup.enter="keyup">
+  </div>
+</body>
+</html>
+<script src="../vue/js/vue .js"></script>
+<script>
+  var app = new Vue({
+    el:"#app",
+    data:{
+      msg:"按键修饰符",
+    },
+    methods: {
+      
+    },
+    computed: {
+      
+    },
+  })
+</script>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    input message:<input type="text" v-model="content"><button @click="saveContent">add</button>
+
+    <ul v-if="lists.length!=0">
+      <li v-for="(content,index) in lists">{{index+1}}.{{content}}<a href="javascript:;" @click="delContent(index)">delete</a></li>
+    </ul>
+
+    <ul v-if="lists.length==0">
+      <li>当前备忘录中还没有任何数据！！！！</li>
+    </ul>
+
+    <a v-show="lists.length!=0" href="javascript:;" @click="lists=[]">清空备忘录</a>
+
+    <h3>当前备忘录共:{{lists.length}}条</h3>
+  </div>
+</body>
+</html>
+<script src="../vue/js/vue .js"></script>
+
+<script>
+  var app = new Vue({
+    el:"#app",
+    data:{
+      lists:["xiaoming","xiaohei","xiaohong"],
+    },
+    methods: {
+      saveContent(){//保存方法   //null "" false
+        console.log(this.content);
+        if(!this.content){alert('请输入内容....');return false;}
+        this.lists.push(this.content);
+        this.content="";
+      },
+      
+      delContent(index){
+        this.lists.splice(index,1);//根据下标删除 参数1：从哪个位置开始删除   参数2：删除几个
+      }
+    },
+  })
+</script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 事件修饰符  可以连用   @click.stop.self
+        stop：   阻止事件冒泡  阻止事件继续向外传递
+        prevent：阻止事件（标签）的默认行为
+        self：   只监听自身标签触发的事件
+        once：   该事件只触发一次
+        
+      
+        语法   @事件名事件修饰符="事件处理函数=======》 @click.stop="test"
+   -->
+  <div id="app">
+    <h1>{{msg}}</h1>
+  </div>
+</body>
+</html>
+
+<script src="../vue/js/vue .js"></script>
+<script>
+  var app = new Vue({
+    el:"#app",
+    data:{
+      msg:"事件修饰符",
+    },
+    methods: {
+      
+    },
+    computed:{
+       
+    },
+  })
+</script>
